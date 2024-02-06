@@ -34,8 +34,8 @@ class Formatter
                 'text' => $response->getText(),
                 'tts' => $response->getTts(),
                 'buttons' => $buttons,
+                'end_session' => $response->isEndSession(),        
             ],
-            'end_session' => $response->isEndSession(),
             'session' => [
                 'session_id' => $response->getSession()->getSessionId(),
                 'message_id' => $response->getSession()->getMessageId(),
